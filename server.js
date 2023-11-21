@@ -30,8 +30,7 @@ app.set('port', port);
 */
 usersRoutes(app);
 
-
-server.listen(3000, '192.168.1.251' || 'localhost', function() {
+server.listen(3000, '192.168.1.140' || 'localhost', function() {
     console.log('Aplicacion de NodeJS ' + port + ' Iniciada...')
 });
 
