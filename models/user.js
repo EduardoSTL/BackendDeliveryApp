@@ -28,7 +28,7 @@ User.create = async (user, result) => {
             user.lastname,
             user.phone,
             user.image,
-            user.hash,
+            hash,
             new Date(),
             new Date()
         ],
