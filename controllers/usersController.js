@@ -51,16 +51,16 @@ module.exports = {
                 });
             }
             else {
-                return res.status(401).json({
+                return res.status(401).json({ //EL CLIENTE NO TIENE AUTORIZACION PARA REALIZAR ESTA PETICION
                     success: false,
                     message: 'El password es incorrecto',
                 });
             }
         })
+    },
 
-        
-        register(req, res) {
-            
+    register(req, res) {
+
         const user = req.body; // CAPTURO LOS DATOS QUE ME ENVIE EL CLIENTE
         User.create(user, (err, data) => {
 
@@ -79,7 +79,5 @@ module.exports = {
             });
 
         });
-        }
-
     }
 }
